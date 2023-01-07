@@ -1,0 +1,29 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--veryDarkBlue);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+html {
+  --blue:                 hsl(246, 80%, 60%);
+  --lightRedWork:         hsl(15, 100%, 70%);
+  --softBluePlay:         hsl(195, 74%, 62%);
+  --lightRedStudy:        hsl(348, 100%, 68%);
+  --limeGreenExercise:    hsl(145, 58%, 55%);
+  --violetSocial:         hsl(264, 64%, 52%);
+  --softOrangeSelfcare:   hsl(43, 84%, 65%);
+  --veryDarkBlue:         hsl(226, 43%, 10%);
+  --darkBlue:             hsl(235, 46%, 20%);
+  --desaturatedBlue:      hsl(235, 45%, 61%);
+  --paleBlue:             hsl(236, 100%, 87%);
+}
