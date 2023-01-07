@@ -3,7 +3,7 @@ export const data = {
         name: "Jeremy Robson",
         title: "Report for"
     },
-    timeFrame: [ daily, weekly, monthly ],
+    timeFrame: [ "daily", "weekly", "monthly" ],
     trackedData: [
         {
           "title": "Work",
