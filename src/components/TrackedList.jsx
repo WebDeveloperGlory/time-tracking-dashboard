@@ -1,8 +1,11 @@
 import React from 'react'
+import TrackerCard from './TrackerCard'
 
 function TrackedList() {
   return (
-    <div>TrackedList</div>
+    <div>
+      <TrackerCard />
+    </div>
   )
 }
 
