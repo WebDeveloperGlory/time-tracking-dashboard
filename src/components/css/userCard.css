@@ -3,6 +3,7 @@
     height: 25.625rem;
     background-color: var(--darkBlue);
     border-radius: 15px;
+    margin-right: 20px;
 }
 .userCard .topSection,
 .userCard .bottomSection {
