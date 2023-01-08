@@ -2,10 +2,6 @@ import React from 'react'
 import './css/trackerCard.css'
 
 const TrackerCard = ({ title, previous, current, past }) => {
-    // const work = "work";
-    // const currentTime = "2hrs";
-    // const timeFrame = "Yesterday";
-    // const pastTime = "5hrs";
   return (
     <div className='card'>
         <div className="txtBlock">

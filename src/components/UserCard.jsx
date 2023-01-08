@@ -3,9 +3,13 @@ import { data } from '../constants'
 import jeremy from '../assets/jeremy.png'
 import './css/userCard.css'
 
-const UserCard = () => {
+const UserCard = ({ timeframe, setTimeframe }) => {
     const time = data.timeFrame.map((time, i) => (
-        <p key={`${i}-time`}>{time}</p>
+        <p 
+            key={`${i}-time`}
+            onClick={() => setTimeframe(time)}
+            className={timeframe === time ? "active" : null}
+        >{time}</p>
     ))
   return (
     <div className='userCard'>

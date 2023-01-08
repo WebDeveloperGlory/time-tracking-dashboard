@@ -9,8 +9,8 @@ function App() {
 
       <section>
         <div className="container">
-          <UserCard />
-          <TrackedList timeframe={timeframe} setTimeframe={setTimeframe}/>
+          <UserCard timeframe={timeframe} setTimeframe={setTimeframe}/>
+          <TrackedList timeframe={timeframe} />
         </div>
       </section>
 
