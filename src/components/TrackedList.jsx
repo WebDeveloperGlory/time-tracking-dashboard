@@ -1,6 +1,7 @@
 import React from 'react'
 import TrackerCard from './TrackerCard'
 import { data } from '../constants'
+import { self, exercise, play, work, study, social } from '../assets'
 import './css/trackedList.css'
 
 function TrackedList({ timeframe }) {
@@ -8,6 +9,7 @@ function TrackedList({ timeframe }) {
     let current;
     let previous;
     let past;
+    let svg;
       if(timeframe === "daily") {
         current   = data.timeframes.daily.current;
         previous  = data.timeframes.daily.previous;
@@ -21,12 +23,21 @@ function TrackedList({ timeframe }) {
         previous  = data.timeframes.monthly.previous;
         past      = "Last Month";
       }
+
+      // temp logic
+      if(data.title === "Work") { svg = work; }
+      else if (data.title === "Social") { svg = social; }
+      else if (data.title === "Self Care") { svg = self; }
+      else if (data.title === "Exercise") { svg = exercise; }
+      else if (data.title === "Play") { svg = play; }
+      else { svg = study; }
     return <TrackerCard
       key={data.title}
       title={data.title}
       previous={previous}
       current={current}
       past={past}
+      svg={svg}
     />
   });
   return (
