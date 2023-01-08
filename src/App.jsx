@@ -3,14 +3,14 @@ import { UserCard, TrackedList } from './components'
 import './App.css'
 
 function App() {
-
+    const [timeframe, setTimeframe] = useState("daily");
   return (
     <div className="App">
 
       <section>
         <div className="container">
           <UserCard />
-          <TrackedList />
+          <TrackedList timeframe={timeframe} setTimeframe={setTimeframe}/>
         </div>
       </section>
 
