@@ -1,6 +1,7 @@
 import React from 'react'
 import TrackerCard from './TrackerCard'
 import { data } from '../constants'
+import './css/trackedList.css'
 
 function TrackedList({ timeframe }) {
   const cardList = data.trackedData.map((data, i) => {
@@ -29,7 +30,7 @@ function TrackedList({ timeframe }) {
     />
   });
   return (
-    <div>
+    <div className='trackedContainer'>
       {cardList}
     </div>
   )

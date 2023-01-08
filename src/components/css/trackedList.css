@@ -1,0 +1,7 @@
+.trackedContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: inherit;
+}

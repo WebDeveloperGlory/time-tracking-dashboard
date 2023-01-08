@@ -2,8 +2,11 @@ import React from 'react'
 import './css/trackerCard.css'
 
 const TrackerCard = ({ title, previous, current, past }) => {
+    const styles = {
+      backgroundColor: `var(--${title})`
+    }
   return (
-    <div className='card'>
+    <div className='card' style={styles}>
         <div className="txtBlock">
             <div className="top">
                 <p>{title}</p>

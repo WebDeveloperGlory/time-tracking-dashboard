@@ -2,9 +2,14 @@
     position: relative;
     width: 12.5rem;
     height: 12.5rem;
-    background-color: var(--lightRedWork);
+    background-color: var(--Self);
     border-radius: 10px;
-    margin-bottom: 0.625rem;
+    margin-bottom: 1.25rem;
+    margin-right: 1.25rem;
+}
+.card:nth-child(3),
+.card:last-child {
+    margin-right: 0;
 }
 .card .txtBlock {
     position: absolute;
@@ -12,7 +17,7 @@
     height: 9.73rem;
     width: 100%;
     background-color: var(--darkBlue);
-    border-radius: 10px;
+    border-radius: 9px;
 }
 .card .txtBlock .top {
     display: flex;
