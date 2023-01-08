@@ -53,3 +53,7 @@ p, h1 { margin: 0; }
 }
 .userCard .bottomSection .txt p.active,
 .userCard .bottomSection .txt p:hover { color: #fff; }
+
+@media (max-width: 425px) {
+    
+}

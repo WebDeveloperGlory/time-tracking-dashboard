@@ -53,3 +53,10 @@
     letter-spacing: 1px;
     color: var(--desaturatedBlue);
 }
+
+/* ################################## */
+/*           RESPONSIVENESS           */
+/* ################################## */
+@media (max-width: 375px) {
+    
+}

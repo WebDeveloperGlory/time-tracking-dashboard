@@ -5,3 +5,9 @@
     width: 40rem;
     height: inherit;
 }
+@media screen and (max-width: 425px) {
+    .trackedContainer {
+      flex-direction: column;
+      max-width: 100vw;
+    }
+}
