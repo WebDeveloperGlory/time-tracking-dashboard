@@ -34,10 +34,12 @@
 .card .txtBlock .top p.dots {
     font-size: 1.5rem;
     line-height: 12px;
+    opacity: 0.75;
     color: var(--desaturatedBlue);
 }
 .card .txtBlock .top p.dots:hover {
     color: #fff;
+    opacity: 1;
 }
 .card .txtBlock .bottom {
     padding: 5px 20px;

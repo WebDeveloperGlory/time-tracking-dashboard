@@ -6,23 +6,29 @@ import './css/trackedList.css'
 
 function TrackedList({ timeframe }) {
   const cardList = data.trackedData.map((data, i) => {
-    let current;
-    let previous;
-    let past;
+    let current = data.timeframes[timeframe].current;
+    let previous = data.timeframes[timeframe].previous;
+    let past = timeframe === "daily" ? "Yesterday" : `Last ${timeframe.replace('ly', '')}`
     let svg;
-      if(timeframe === "daily") {
-        current   = data.timeframes.daily.current;
-        previous  = data.timeframes.daily.previous;
-        past      = "Yesterday";
-      } else if (timeframe === "weekly") {
-        current   = data.timeframes.weekly.current;
-        previous  = data.timeframes.weekly.previous;
-        past      = "Last Week";
-      } else {
-        current   = data.timeframes.monthly.current;
-        previous  = data.timeframes.monthly.previous;
-        past      = "Last Month";
-      }
+
+    // OLD LOGIC{WILL BE DELETED EVENTUALLY}
+    // let current;
+    // let previous;
+    // let past;
+    // let svg;
+    //   if(timeframe === "daily") {
+    //     current   = data.timeframes.daily.current;
+    //     previous  = data.timeframes.daily.previous;
+    //     past      = "Yesterday";
+    //   } else if (timeframe === "weekly") {
+    //     current   = data.timeframes.weekly.current;
+    //     previous  = data.timeframes.weekly.previous;
+    //     past      = "Last Week";
+    //   } else {
+    //     current   = data.timeframes.monthly.current;
+    //     previous  = data.timeframes.monthly.previous;
+    //     past      = "Last Month";
+    //   }
 
       // temp logic
       if(data.title === "Work") { svg = work; }
