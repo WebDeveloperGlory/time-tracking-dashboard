@@ -1,14 +1,11 @@
 {
   "name": "planets_fact_site",
-  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
