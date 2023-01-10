@@ -11,6 +11,11 @@
     position: absolute;
     right: 0;
 }
+.card:nth-child(4),
+.card:nth-child(5),
+.card:nth-child(6) {
+    margin-bottom: 0;
+}
 .card:nth-child(3),
 .card:last-child {
     margin-right: 0;
@@ -59,6 +64,38 @@
 /* ################################## */
 /*           RESPONSIVENESS           */
 /* ################################## */
-@media (max-width: 375px) {
-    
+@media screen and (max-width: 425px) {
+    .card {
+      /* flex-direction: column; */
+      width: 90%;
+      height: 10rem;
+      margin-left: 5%;
+    }
+    .card:nth-child(4),
+    .card:nth-child(5),
+    .card:nth-child(6) {
+        margin-bottom: 1.25rem;
+    }
+    .card .txtBlock{
+        height: 7.9rem;
+    }
+    .card .txtBlock .top {
+        padding-bottom: 5px;
+    }
+    .card .txtBlock .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+    }
+    .card .txtBlock .top p.dots,
+    .card .txtBlock .bottom p {
+        opacity: 0.75;
+    }
+    .card .txtBlock .bottom p {
+        font-size: 1rem;
+        color: #fff;
+        align-self: flex-end;
+        margin-bottom: 5px;
+    }
 }

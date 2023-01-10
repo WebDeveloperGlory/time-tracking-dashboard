@@ -14,7 +14,7 @@ function App() {
         </div>
       </section>
 
-      <section>
+      <section id='atr'>
         <div className="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           Coded by <a href="#">F£@RL£$s</a>.

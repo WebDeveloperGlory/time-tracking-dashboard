@@ -5,6 +5,12 @@
     border-radius: 15px;
     margin-right: 20px;
 }
+@media screen and (max-width: 425px) {
+    .userCard {
+      width: 90%;
+      margin-right: 0;
+    }
+}
 .userCard .topSection,
 .userCard .bottomSection {
     padding: 0 1.125rem;
@@ -23,6 +29,22 @@
     border: 2px #fff solid; 
     border-radius: 50%;
 }
+@media screen and (max-width: 425px) {
+    .userCard .topSection {
+        height: 8.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .userCard .topSection .usrImg {
+        padding: 0;
+    }
+    .userCard .topSection .usrImg img {
+        width: 3.8rem;
+        margin-right: 15px;
+    }
+
+}
 p, h1 { margin: 0; }
 .userCard .topSection .txt p {
     font-size: 0.75rem;
@@ -33,6 +55,17 @@ p, h1 { margin: 0; }
     line-height: 35px;
     letter-spacing: 2px;
     font-weight: 300;
+}
+@media screen and (max-width: 425px) {
+    .userCard .topSection .txt p {
+        font-size: 1rem;
+        opacity: 0.5;
+        color: #fff;
+    }
+    .userCard .topSection .txt h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
 }
 
 .userCard .bottomSection {
@@ -55,5 +88,18 @@ p, h1 { margin: 0; }
 .userCard .bottomSection .txt p:hover { color: #fff; }
 
 @media (max-width: 425px) {
-    
+    .userCard .bottomSection {
+        align-items: center;
+        height: 1.0rem;
+    }
+    .userCard .bottomSection .txt {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .userCard .bottomSection .txt p {
+        margin: 0 15%;
+        font-size: 1.2rem;
+    }
 }
