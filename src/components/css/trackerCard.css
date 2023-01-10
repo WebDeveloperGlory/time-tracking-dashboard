@@ -28,6 +28,10 @@
     background-color: var(--darkBlue);
     border-radius: 9px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.card .txtBlock:hover {
+    opacity: 0.95;
 }
 .card .txtBlock .top {
     display: flex;
@@ -40,6 +44,7 @@
     font-size: 1.5rem;
     line-height: 12px;
     opacity: 0.75;
+    transition: 0.5s;
     color: var(--desaturatedBlue);
 }
 .card .txtBlock .top p.dots:hover {

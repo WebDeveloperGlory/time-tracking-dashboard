@@ -83,6 +83,7 @@ p, h1 { margin: 0; }
     font-size: 0.85rem;
     cursor: pointer;
     color: var(--desaturatedBlue);
+    transition: 0.5s;
 }
 .userCard .bottomSection .txt p.active,
 .userCard .bottomSection .txt p:hover { color: #fff; }
